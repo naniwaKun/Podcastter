@@ -5,7 +5,7 @@
 	"baseUrl":"http://domain/",
 	"mp3Dir":"public/episode/",
 	"imageDir":"public/image/",
-	"fontPath":"font/**.ttf",
+	"fontPath":"font/rounded-x-mplus-1p-heavy.ttf",
 
 	"key":"",
 	"secret":"",

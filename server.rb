@@ -35,7 +35,7 @@ post '/management/upload' do
 	if params[:mp3file]
 		savePath = $set["baseDir"] + "public/episode/#{params[:mp3file][:filename]}" 
     File::open(savePath, "a").write( params[:mp3file][:tempfile].read)
-		"curl -F 'description=ここにかく " + $set["baseUrl"] + "public/episode/#{params[:mp3file][:filename]} #あれとそれとこれ'" + ' http://stpingogo.dip.jp/management/tweet'+ "\n"
+		"$set["baseUrl"] + "public/episode/#{params[:mp3file][:filename]} + "\n"
 	else
 		"アップロード失敗"
 	end

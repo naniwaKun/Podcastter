@@ -1,0 +1,16 @@
+[Unit]
+Description=podcastter: podcast server software with twitter
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/ruby /opt/podcastter/server.rb -e production
+KillMode=process
+Environment=RACK_ENV=production
+Restart=always
+User=user
+Group=group
+WorkingDirectory=/opt/podcastter
+
+[Install]
+WantedBy=multi-user.target

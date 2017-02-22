@@ -1,0 +1,28 @@
+{
+	"itunesUrl":"",
+	"otayori":"",
+
+	"baseUrl":"http://domain/",
+	"mp3Dir":"public/episode/",
+	"imageDir":"public/image/",
+	"fontPath":"font/**.ttf",
+
+	"key":"",
+	"secret":"",
+	"token":"",
+	"token_secret":"",
+	"tags":["#podcast"],
+	"twitterName":"",
+	
+	"title":"",
+	"lang":"",
+	"twitterUrl":"",
+	"description":"",
+	"imageTitle":"***\n***\n***",
+	"category":"",
+	"copylight":"",
+	"mail":"****@****",
+	"author":"",
+	"webmaster":"",
+	"explicit":""
+}

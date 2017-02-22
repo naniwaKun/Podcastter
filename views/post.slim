@@ -1,0 +1,29 @@
+- png = @settei["baseUrl"] + @settei["imageDir"] + URI.escape(@title) + ".png"
+- mp3 = @settei["baseUrl"] + @settei["mp3Dir"] + URI.escape(@title) + ".mp3"
+html lang="ja" 
+  head
+    meta content="width=device-width, initial-scale=1" name="viewport" 
+    meta charset="UTF-8" /
+    meta content="summary_large_image" name="twitter:card" /
+    meta content=@settei["twitterName"] name="twitter:site" /
+    meta content=@title name="twitter:title" /
+    meta content=@description name="twitter:description" /
+    meta content=png name="twitter:image" /
+    title =@title
+    link crossorigin="anonymous" href="/public/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" rel="stylesheet" /
+    link crossorigin="anonymous" href="/public/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" rel="stylesheet" /
+    script crossorigin="anonymous" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" src="/public/js/bootstrap.min.js"
+    script src="//api.html5media.info/1.2.2/html5media.min.js" 
+  body
+    include bodyhead
+    .well.well
+      .container-fluid
+        .row
+          .col-lg-12
+            center
+              img src=png class="img-responsive"
+              audio controls="" preload="" src=mp3
+              a.twitter-share-button data-hashtags=@settei["title"] data-size="large" data-via=@settei["twitterName"] href="https://twitter.com/share"  Tweet
+              javascript:
+                !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
+

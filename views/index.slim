@@ -1,0 +1,21 @@
+html
+  head
+    meta content="width=device-width, initial-scale=1" name="viewport" 
+    include head
+    script src="//api.html5media.info/1.2.2/html5media.min.js" 
+  body
+    include bodyhead
+    .well.well 
+      h3 Podcast番組「 #{@settei["title"]} 。」の補助サイト。
+      h4 iPhone、iTunes購読される方は購読のリンク、その他の方法で登録される方はRSSのリンクをご利用ください！ 
+      h4 感想やご意見はお便り、または、ハッシュタグ「# #{@settei["title"]} 」まで！
+    - for i in @items
+      - png = @settei["baseUrl"] + @settei["imageDir"] + URI.escape(i.title) + ".png"
+      - mp3 = @settei["baseUrl"] + @settei["mp3Dir"] + URI.escape(i.title) + ".mp3"
+      .well.well 
+        .container-fluid
+          .row
+            center
+              img src=png class="img-responsive"
+              audio controls="" preload="" src=mp3
+

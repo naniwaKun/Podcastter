@@ -1,0 +1,22 @@
+nav.navbar.navbar-inverse.navbar-fixed-top
+  .container
+    .navbar-header
+      button.navbar-toggle.collapsed aria-controls="navbar" aria-expanded="false" data-target="#navbar" data-toggle="collapse" type="button" 
+        span.sr-only Toggle navigation
+        span.icon-bar
+        span.icon-bar
+        span.icon-bar
+      a.navbar-brand href="/"  =@settei["title"]
+    #navbar.navbar-collapse.collapse
+      ul.nav.navbar-nav
+        li.active
+          a href=@settei['twitterUrl']  Twitter
+        li
+          a href=@settei["itunesUrl"]  購読
+        li
+          a href=@settei["otayori"]  お便り
+        li
+          a href="/public/rss.xml"  RSS
+br/
+br/
+br/

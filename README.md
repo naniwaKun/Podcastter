@@ -1,5 +1,15 @@
 # Podcastter
 
-#Install
+#version
+a-0.01
 
-#Api
+#Install
+manual yet
+
+#loadmap
+working:a-version
+webInstall:b-version
+compleatlyWorking:1.0-version
+
+#document
+japanese only yet.

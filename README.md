@@ -13,3 +13,4 @@ compleatlyWorking:1.0-version
 
 #document
 japanese only yet.
+http://qiita.com/naniwaKun/items/207f4ff46d8c2af9bd24
